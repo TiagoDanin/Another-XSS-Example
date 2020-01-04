@@ -1,7 +1,7 @@
 {
 	"name": "another-xss-example",
 	"main": "index.js",
-	"version": "0.0.1",
+	"version": "0.0.2-0",
 	"description": "Example app in my lecture: \"XSS - From Theory to Practice\" in Vue.js Norte 10th Edition",
 	"author": {
 		"email": "TiagoDanin@outlook.com",
