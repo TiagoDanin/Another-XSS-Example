@@ -8,8 +8,10 @@
 			</header>
 			<div class="card-content">
 				<div class="content control" :class="isLoading ? 'is-loading' : ''">
-					<input ref="input" v-model="text" class="input is-large" type="text" placeholder="...">
-					<slot />
+					<p>Author:</p>
+					<input v-model="author" class="input" type="text">
+					<p>Message:</p>
+					<input v-model="text" class="input is-large" type="text" placeholder="...">
 				</div>
 			</div>
 			<footer class="card-footer">
@@ -29,18 +31,31 @@ export default {
 		}
 	},
 	data: function () {
+		const niceNames = [
+			'Mario',
+			'Luigi',
+			'Ana',
+			'Tiago',
+			'Maria',
+			'João'
+		]
 		return {
 			isLoading: false,
-			text: ''
+			text: '',
+			author: niceNames[Math.floor(Math.random()*niceNames.length)]
 		}
 	},
 	methods: {
 		sendMsg: function () {
 			this.$data.isLoading = true
-			// await done
-			this.$data.isLoading = false
-			this.$data.text = ""
-			this.reload()
+			this.$axios.post('/api/v1/set', {
+				text: this.$data.text,
+				author: this.$data.author
+			}).then(res => {
+				this.$data.isLoading = false
+				this.$data.text = ""
+				this.reload()
+			})
 		},
 		deleteMsg: function () {
 			this.$data.text = ""

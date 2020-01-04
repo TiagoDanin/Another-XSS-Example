@@ -22,8 +22,8 @@ export default {
 		Message,
 		CreateMessage
 	},
-	asyncData: function({ $axios, params }) {
-		return $axios.get('/api/v1/base').then(res => {
+	asyncData: function({ $axios }) {
+		return $axios.get('/api/v1/').then(res => {
 			return res.data
 		})
 	}

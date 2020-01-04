@@ -17,7 +17,7 @@ module.exports = {
 		'nuxt-buefy'
 	],
 	serverMiddleware: [
-		'~/api/base.js'
+		'~/server/api.js'
 	],
 	ignorePaths: [
 		'/api'
