@@ -40,9 +40,13 @@ export default {
 			// await done
 			this.$data.isLoading = false
 			this.$data.text = ""
+			this.reload()
 		},
 		deleteMsg: function () {
 			this.$data.text = ""
+		},
+		reload: function () {
+			this.$router.go(this.$router.currentRoute)
 		}
 	}
 };
