@@ -1,0 +1,57 @@
+{
+	"name": "another-xss-example",
+	"main": "index.js",
+	"bin": {
+		"another-xss-example": "index.js"
+	},
+	"preferGlobal": true,
+	"version": "0.0.1",
+	"description": "Example app in my lecture: \"XSS - From Theory to Practice\" in Vue.js Norte 10th Edition",
+	"author": {
+		"email": "TiagoDanin@outlook.com",
+		"name": "Tiago Danin",
+		"url": "https://TiagoDanin.github.io"
+	},
+	"license": "MIT",
+	"keywords": [
+		"example",
+		"example-app",
+		"lecture-material",
+		"node",
+		"nuxt",
+		"vue",
+		"xss",
+		"xss-example",
+		"xss-vulnerability"
+	],
+	"scripts": {
+		"start": "node index.js",
+		"test": "xo"
+	},
+	"engines": {
+		"node": ">=11"
+	},
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TiagoDanin/Another-XSS-Example.git"
+	},
+	"homepage": "https://TiagoDanin.github.io/Another-XSS-Example",
+	"bugs": {
+		"url": "https://github.com/TiagoDanin/Another-XSS-Example/issues"
+	},
+	"github": {
+		"name": "Another-XSS-Example",
+		"owner": "TiagoDanin"
+	},
+	"files": [
+		"LICENSE",
+		"README.md"
+	],
+	"devDependencies": {
+		"xo": "^0.24.0"
+	},
+	"xo": {
+		"semicolon": false
+	}
+}
