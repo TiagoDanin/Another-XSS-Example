@@ -1,10 +1,6 @@
 {
 	"name": "another-xss-example",
 	"main": "index.js",
-	"bin": {
-		"another-xss-example": "index.js"
-	},
-	"preferGlobal": true,
 	"version": "0.0.1",
 	"description": "Example app in my lecture: \"XSS - From Theory to Practice\" in Vue.js Norte 10th Edition",
 	"author": {
@@ -25,8 +21,11 @@
 		"xss-vulnerability"
 	],
 	"scripts": {
-		"start": "node index.js",
-		"test": "xo"
+		"start": "cross-env NODE_ENV=production node server/index.js",
+		"dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+		"test": "xo",
+		"build": "nuxt build",
+		"generate": "nuxt generate"
 	},
 	"engines": {
 		"node": ">=11"
@@ -46,9 +45,27 @@
 	},
 	"files": [
 		"LICENSE",
-		"README.md"
+		"README.md",
+		"assets",
+		"components",
+		"layouts",
+		"middleware",
+		"nuxt.config.js",
+		"package.json",
+		"pages",
+		"plugins",
+		"server",
+		"static",
+		"store"
 	],
+	"dependencies": {
+		"cross-env": "^5.2.0",
+		"express": "^4.16.4",
+		"nuxt": "^2.0.0",
+		"nuxt-buefy": "^0.3.2"
+	},
 	"devDependencies": {
+		"nodemon": "^1.18.9",
 		"xo": "^0.24.0"
 	},
 	"xo": {
