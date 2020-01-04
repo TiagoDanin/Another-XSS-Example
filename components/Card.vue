@@ -7,16 +7,14 @@
 				</p>
 			</header>
 			<div class="card-content">
-				<div class="content has-text-centered">
-					<b-icon :icon="icon" size="is-large" type="is-primary" />
+				<div class="content control" :class="isLoading ? 'is-loading' : ''">
+					<input ref="input" v-model="text" class="input is-large" type="text" placeholder="...">
+					<slot />
 				</div>
 			</div>
 			<footer class="card-footer">
-				<div class="card-footer-item">
-					<span>
-						<slot />
-					</span>
-				</div>
+				<a v-on:click="sendMsg" class="card-footer-item">Save</a>
+				<a v-on:click="deleteMsg" class="card-footer-item">Delete</a>
 			</footer>
 		</div>
 	</div>
@@ -28,10 +26,23 @@ export default {
 		title: {
 			type: String,
 			required: true
+		}
+	},
+	data: function () {
+		return {
+			isLoading: false,
+			text: ''
+		}
+	},
+	methods: {
+		sendMsg: function () {
+			this.$data.isLoading = true
+			// await done
+			this.$data.isLoading = false
+			this.$data.text = ""
 		},
-		icon: {
-			type: String,
-			required: true
+		deleteMsg: function () {
+			this.$data.text = ""
 		}
 	}
 };
