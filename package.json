@@ -64,7 +64,7 @@
 		"cross-env": "^5.2.0",
 		"express": "^4.16.4",
 		"jsonfile": "^5.0.0",
-		"node-sass": "^4.13.0",
+		"node-sass": "^4.13.1",
 		"nuxt": "^2.0.0",
 		"nuxt-buefy": "^0.3.2",
 		"sass-loader": "^8.0.0"
