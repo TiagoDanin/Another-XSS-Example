@@ -71,7 +71,7 @@
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.2",
-		"xo": "^0.24.0"
+		"xo": "^0.25.3"
 	},
 	"xo": {
 		"semicolon": false
