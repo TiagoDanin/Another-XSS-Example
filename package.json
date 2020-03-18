@@ -65,7 +65,7 @@
 		"express": "^4.17.1",
 		"jsonfile": "^6.0.1",
 		"node-sass": "^4.13.1",
-		"nuxt": "^2.11.0",
+		"nuxt": "^2.12.0",
 		"nuxt-buefy": "^0.3.23",
 		"sass-loader": "^8.0.2"
 	},
