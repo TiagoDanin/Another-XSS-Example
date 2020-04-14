@@ -70,7 +70,7 @@
 		"sass-loader": "^8.0.2"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.2",
+		"nodemon": "^2.0.3",
 		"xo": "^0.29.1"
 	},
 	"xo": {
