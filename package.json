@@ -67,7 +67,7 @@
 		"node-sass": "^6.0.0",
 		"nuxt": "^2.15.4",
 		"nuxt-buefy": "^0.4.7",
-		"sass-loader": "^11.0.1"
+		"sass-loader": "^11.1.1"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.4",
