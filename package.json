@@ -28,7 +28,7 @@
 		"generate": "nuxt generate"
 	},
 	"engines": {
-		"node": ">=11"
+		"node": ">=v14.17.3"
 	},
 	"private": false,
 	"repository": {
