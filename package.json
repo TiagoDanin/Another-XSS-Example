@@ -66,7 +66,7 @@
 		"jsonfile": "^6.0.1",
 		"node-sass": "^6.0.0",
 		"nuxt": "^2.15.4",
-		"nuxt-buefy": "^0.4.7",
+		"nuxt-buefy": "^0.4.28",
 		"sass-loader": "^11.0.1"
 	},
 	"devDependencies": {
